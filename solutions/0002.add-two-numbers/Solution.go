@@ -1,24 +1,10 @@
-package one
+package solutions
 
-func twoSum(nums []int, target int) []int {
-	m := map[int]int{}
-	for i, num := range nums {
-		diff := target - num
-		j, ok := m[diff]
-		if ok {
-			return []int{j, i}
-		}
-		m[num] = i
-	}
-	return []int{}
-}
+import "leetcode/structures"
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
+type ListNode = structures.ListNode
 
-func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
+func AddTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	dummy := new(ListNode)
 	n1, n2, tail := l1, l2, dummy
 	carry := 0
