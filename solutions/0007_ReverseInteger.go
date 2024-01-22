@@ -1,6 +1,6 @@
 package solutions
 
-func reverse(x int) int {
+func Reverse(x int) int {
 	const MaxUint = ^uint32(0)
 	const MaxInt = int32(MaxUint >> 1)
 	const MinInt = -MaxInt - 1

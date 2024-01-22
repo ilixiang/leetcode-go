@@ -2,7 +2,7 @@ package solutions
 
 import "strings"
 
-func longestPalindromicSubstring(s string) string {
+func LongestPalindromicSubstring(s string) string {
 	if len(s) <= 1 {
 		return s
 	}

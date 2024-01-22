@@ -2,7 +2,7 @@ package solutions
 
 import "unicode"
 
-func myAtoi(s string) int {
+func MyAtoi(s string) int {
 	const MaxUint = ^uint32(0)
 	const MaxInt = int32(MaxUint >> 1)
 	const MinInt = -MaxInt - 1

@@ -1,6 +1,6 @@
 package solutions
 
-func longestSubstringWithoutRepeatCharacters(s string) int {
+func LongestSubstringWithoutRepeatCharacters(s string) int {
 	m := map[rune]int{}
 	start := -1
 	rev := 0
