@@ -1,6 +1,6 @@
 package solutions
 
-func solveSudoku(board [][]byte) {
+func SolveSudoku(board [][]byte) {
 	rows := [9]int{}
 	cols := [9]int{}
 	subs := [9]int{}

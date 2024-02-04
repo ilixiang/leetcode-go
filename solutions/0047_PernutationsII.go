@@ -2,7 +2,7 @@ package solutions
 
 import "sort"
 
-func permuteUniq(nums []int) [][]int {
+func PermuteUniq(nums []int) [][]int {
 	sort.Ints(nums)
 
 	capacity := 1

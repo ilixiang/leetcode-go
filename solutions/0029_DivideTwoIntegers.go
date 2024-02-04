@@ -1,6 +1,6 @@
 package solutions
 
-func divide(dividend int, divisor int) int {
+func Divide(dividend int, divisor int) int {
 	const MaxUint = ^uint32(0)
 	const MaxInt = int32(MaxUint >> 1)
 	const MinInt = -MaxInt - 1

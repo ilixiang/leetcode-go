@@ -2,7 +2,7 @@ package solutions
 
 import "sort"
 
-func combinationSum(candidates []int, target int) [][]int {
+func CombinationSum(candidates []int, target int) [][]int {
 	results := make([][]int, 0)
 	buf := []int{}
 	sort.Ints(candidates)

@@ -1,6 +1,6 @@
 package solutions
 
-func searchInsert(nums []int, target int) int {
+func SearchInsert(nums []int, target int) int {
 	left, right := 0, len(nums)-1
 	pos := len(nums)
 	for left <= right {

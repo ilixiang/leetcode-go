@@ -1,7 +1,6 @@
 package solutions
 
-func searchRange(nums []int, target int) []int {
-
+func SearchRange(nums []int, target int) []int {
 	left, right := 0, len(nums)-1
 	divider := -1
 	for left <= right {

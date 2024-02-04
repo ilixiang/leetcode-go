@@ -1,6 +1,6 @@
 package solutions
 
-func swapPairs(head *ListNode) *ListNode {
+func SwapPairs(head *ListNode) *ListNode {
 	dummy := &ListNode{Val: 0, Next: head}
 	n1, n2 := dummy, head
 	for n1 != nil && n2 != nil && n2.Next != nil {

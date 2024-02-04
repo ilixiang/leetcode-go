@@ -1,6 +1,6 @@
 package solutions
 
-func strStr(haystack string, needle string) int {
+func StrStr(haystack string, needle string) int {
 	lps := make([]int, len(needle))
 	for i := 2; i < len(lps); i++ {
 		prev := lps[i-1]

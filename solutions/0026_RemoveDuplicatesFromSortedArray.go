@@ -1,6 +1,6 @@
 package solutions
 
-func removeDuplicates(nums []int) int {
+func RemoveDuplicates(nums []int) int {
 	idx := 0
 	for i := range nums {
 		if i != 0 && nums[i] == nums[i-1] {

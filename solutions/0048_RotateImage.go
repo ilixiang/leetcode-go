@@ -1,6 +1,6 @@
 package solutions
 
-func rotate(matrix [][]int) {
+func Rotate(matrix [][]int) {
 	size := len(matrix)
 
 	low, high := 0, size-1

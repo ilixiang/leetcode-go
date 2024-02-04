@@ -1,6 +1,6 @@
 package solutions
 
-func generateParenthesis(n int) []string {
+func GenerateParenthesis(n int) []string {
 	rev := make([]string, 0)
 	buf := make([]byte, 0, n*2)
 

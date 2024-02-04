@@ -1,6 +1,6 @@
 package solutions
 
-func longestValidParentheses(s string) int {
+func LongestValidParentheses(s string) int {
 	if len(s) < 2 {
 		return 0
 	}

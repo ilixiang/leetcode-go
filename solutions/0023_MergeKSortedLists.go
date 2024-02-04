@@ -1,6 +1,6 @@
 package solutions
 
-func mergeKLists(lists []*ListNode) *ListNode {
+func MergeKLists(lists []*ListNode) *ListNode {
 	var merge func([]*ListNode, []*ListNode) *ListNode
 	merge = func(ls1 []*ListNode, ls2 []*ListNode) *ListNode {
 		var l1, l2 *ListNode = nil, nil

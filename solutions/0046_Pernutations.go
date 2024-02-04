@@ -1,6 +1,6 @@
 package solutions
 
-func permute(nums []int) [][]int {
+func Permute(nums []int) [][]int {
 	capacity := 1
 	for i := 2; i <= len(nums); i++ {
 		capacity *= i

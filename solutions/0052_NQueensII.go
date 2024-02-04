@@ -1,6 +1,6 @@
 package solutions
 
-func totalNQueens(n int) int {
+func TotalNQueens(n int) int {
 	board := make([]int, n)
 
 	var recursive func(int) int

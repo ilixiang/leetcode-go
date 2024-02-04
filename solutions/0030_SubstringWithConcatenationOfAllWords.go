@@ -1,6 +1,6 @@
 package solutions
 
-func findSubstring(s string, words []string) []int {
+func FindSubstring(s string, words []string) []int {
 	rev := make([]int, 0, 10)
 	wordLen := len(words[0])
 	wordMap := map[string]int{}

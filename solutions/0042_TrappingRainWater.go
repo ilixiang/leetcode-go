@@ -1,6 +1,6 @@
 package solutions
 
-func trap(height []int) int {
+func Trap(height []int) int {
 	if len(height) < 3 {
 		return 0
 	}

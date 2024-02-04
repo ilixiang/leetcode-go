@@ -1,6 +1,6 @@
 package solutions
 
-func reverseKGroup(head *ListNode, k int) *ListNode {
+func ReverseKGroup(head *ListNode, k int) *ListNode {
 	dummy := &ListNode{Val: 0, Next: head}
 	n1, n2 := dummy, head
 	counter := 1
