@@ -1,6 +1,6 @@
 package solutions
 
-func DeleteDuplicates(head *ListNode) *ListNode {
+func DeleteDuplicatesII(head *ListNode) *ListNode {
 	dummy := &ListNode{Val: 0, Next: head}
 	prev := dummy
 	cur := head
