@@ -12,7 +12,7 @@ func IsBalanced(root *TreeNode) bool {
 			rightBalanced, rightHeight := recursive(root.Right)
 			heightDiff := leftHeight - rightHeight
 			balanced := leftBalanced && rightBalanced && -1 <= heightDiff && heightDiff <= 1
-			return balanced, max(leftHeight, rightHeight)
+			return balanced, 1 + max(leftHeight, rightHeight)
 		}
 		return false, 0
 	}
