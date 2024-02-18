@@ -25,7 +25,7 @@ func Reverse(x int) int {
 		for x != 0 {
 			quotient := x / 10
 			remainder := x % 10
-			if rev > MinIntQuotient || (rev == MinIntQuotient && remainder >= MinIntQuotient) {
+			if rev > MinIntQuotient || (rev == MinIntQuotient && remainder >= MinIntRemainder) {
 				rev = rev*10 + remainder
 			} else {
 				return 0
