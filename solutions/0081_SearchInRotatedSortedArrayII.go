@@ -1,6 +1,6 @@
 package solutions
 
-func search(nums []int, target int) bool {
+func SearchInRotatedSortedArrayII(nums []int, target int) bool {
 	left, right := 0, len(nums)-1
 	for left <= right {
 		mid := (left + right) >> 1
