@@ -10,28 +10,28 @@ func MinStackConstructor() MinStack {
 	return MinStack{size: 0, stack: []int{}, valStack: []int{}}
 }
 
-func (this *MinStack) Push(val int) {
-	if this.size == 0 {
-		this.stack = append(this.stack, val)
+func (s *MinStack) Push(val int) {
+	if s.size == 0 {
+		s.stack = append(s.stack, val)
 	} else {
-		this.stack = append(this.stack, min(val, this.stack[this.size-1]))
+		s.stack = append(s.stack, min(val, s.stack[s.size-1]))
 	}
-	this.valStack = append(this.valStack, val)
-	this.size++
+	s.valStack = append(s.valStack, val)
+	s.size++
 }
 
-func (this *MinStack) Pop() {
-	if this.size != 0 {
-		this.size--
-		this.stack = this.stack[:this.size]
-		this.valStack = this.valStack[:this.size]
+func (s *MinStack) Pop() {
+	if s.size != 0 {
+		s.size--
+		s.stack = s.stack[:s.size]
+		s.valStack = s.valStack[:s.size]
 	}
 }
 
-func (this *MinStack) Top() int {
-	return this.valStack[this.size-1]
+func (s *MinStack) Top() int {
+	return s.valStack[s.size-1]
 }
 
-func (this *MinStack) GetMin() int {
-	return this.stack[this.size-1]
+func (s *MinStack) GetMin() int {
+	return s.stack[s.size-1]
 }
